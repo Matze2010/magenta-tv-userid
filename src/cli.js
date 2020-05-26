@@ -62,13 +62,9 @@ async function cli(args) {
 
     try {
         console.log('-------------------------------------');
-        console.log('Schritt 1 von 4: Login');
-        await magentaBackend.loginPhase();
-        console.log('Schritt 2 von 4: Authentication');
-        await magentaBackend.authenticatePhase();
-        console.log('Schritt 3 von 4: oAuth');
+        console.log('Schritt 1 von 2: oAuth');
         await magentaBackend.oAuthPhase();
-        console.log('Schritt 4 von 4: DTAuthentication');
+        console.log('Schritt 2 von 2: DTAuthentication');
         await magentaBackend.DTAuthenticatePhase();
         console.log('-------------------------------------');
 

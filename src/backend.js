@@ -13,12 +13,13 @@ class MagentaBackend {
         this.username = username;
         this.password = password;
 
-        this.oAuthScope = null;
-        this.oAuthServiceURL = null;
+        this.oAuthScope = "ngtvepg";
+        this.oAuthServiceURL = "https://accounts.login.idm.telekom.com";
         this.accessToken = null;
         this.userID = null;
     }
 
+    /*
     async loginPhase() {
 
         this.oAuthScope = null;
@@ -51,7 +52,9 @@ class MagentaBackend {
         
         throw new UnexpectedResponseError(response);
     }
+    */
 
+    /*
     async authenticatePhase() {
        const response = await axios.post(`${this.APP_URL}/EPG/JSON/Authenticate?SID=firstup&T=Mac_chrome_81`, {
             preSharedKeyID: "PC01P00002",
@@ -69,6 +72,7 @@ class MagentaBackend {
             throw new UnexpectedResponseError(response);
         }
     }
+    */
 
     async oAuthPhase() {
 

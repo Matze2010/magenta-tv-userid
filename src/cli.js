@@ -37,7 +37,7 @@ async function promptForMissingOptions(options) {
 
     if (!options.password) {
         questions.push({
-            type: 'input',
+            type: 'password',
             name: 'password',
             message: 'Telekom EntertainTV / MagentaTV Password:',
             validate: function (input) {

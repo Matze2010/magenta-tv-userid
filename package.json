@@ -1,0 +1,28 @@
+{
+  "name": "magenta-tv-userid",
+  "version": "1.0.0",
+  "description": "A CLI to obtain the MagentaTV UserID",
+  "main": "src/index.js",
+  "bin": {
+    "magenta-tv-userid": "bin/magentaTV"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "cli",
+    "magentaTV"
+  ],
+  "author": "Mathias Gisch",
+  "license": "ISC",
+  "dependencies": {
+    "arg": "^4.1.3",
+    "axios": "^0.19.2",
+    "esm": "^3.2.25",
+    "inquirer": "^7.1.0",
+    "qs": "^6.9.4"
+  }
+}
